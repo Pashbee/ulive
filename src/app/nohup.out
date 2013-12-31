@@ -1,0 +1,29 @@
+ * Running on http://127.0.0.1:5000/
+Traceback (most recent call last):
+  File "routes.py", line 18, in <module>
+    app.run(debug=True)
+  File "/root/PYDEV/ulive/lib/python2.7/site-packages/flask/app.py", line 772, in run
+    run_simple(host, port, self, **options)
+  File "/root/PYDEV/ulive/lib/python2.7/site-packages/werkzeug/serving.py", line 706, in run_simple
+    test_socket.bind((hostname, port))
+  File "/usr/lib64/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+ * Running on http://0.0.0.0:5000/
+ * Restarting with reloader
+192.168.1.70 - - [31/Dec/2013 09:20:25] "GET / HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:20:46] "GET / HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/
+ * Restarting with reloader
+192.168.1.70 - - [31/Dec/2013 09:36:08] "GET / HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:36:11] "GET / HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:46:26] "GET / HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:48:55] "GET / HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:55:17] "GET /about HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:55:19] "GET /projects HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:55:23] "GET /about HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:55:24] "GET / HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:56:01] "GET /about HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:56:02] "GET /projects HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 09:56:03] "GET / HTTP/1.1" 200 -
+192.168.1.70 - - [31/Dec/2013 10:00:29] "GET / HTTP/1.1" 200 -

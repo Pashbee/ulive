@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+ 
+/*
+ * Create dark grey header with a white logo
+ */
+  
+header {
+ /* background-color: #2B2B2B; */
+  background-color: #0099FC;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+ 
+header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+  font-size: 22pt;
+}
+ 
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+
+}
+ 
+/*
+ * Center the body content
+ */
+  
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+/* 
+div.jumbo {
+  padding: 10px 0 30px 0;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+ */
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #0099FC;
+}
+ 
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #0099FC;
+}
+
+body p {
+  color: #0099FC;
+  font-size: 0.8em;
+}
+
+/*
+ * Display navigation links inline
+ */
+ 
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+ 
+.menu li {
+  display: inline;
+}
+ 
+.menu li + li {
+  margin-left: 35px;
+}
+ 
+.menu li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*
+ * Image For Logo Bar
+ */
+
+div.headicons {
+  float: left;
+  
+
+}
+
+ img.fb {
+  padding-left: 2px;
+  
+ }
+
+ img.mail {
+  padding-left: 2px;
+ }
+
+ img.twitter {
+  padding-left: 2px;
+ }
+
+ img.youtube {
+  padding-left: 2px;
+ }
+
+ div.footbox {
+  
+  padding: 5px;
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 50%;
+  height: 25%;
+  background-color: rgba(0, 153, 252, 0.1);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  /* border:1px solid black; */
+  /*opacity:0.1;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  
+ }
+
+ p.textfoot {
+  color: #0099FC;
+  opacity: 100.0;
+  font-size: 8pt;
+
+ }
