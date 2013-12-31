@@ -6,13 +6,18 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
 <script type="text/javascript">
 $(function() {
-            var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+            
+    function cpu_update() {
+    var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
             $.getJSON($SCRIPT_ROOT+"/_stuff",
                 function(data) {
                     $("#cpuload").text(data.cpu+" %")
                     $("#ram").text(data.ram+" %")
                     $("#disk").text(data.disk+" %")
                 });
+        }
+        setInterval(cpu_update, 10000);
+        cpu_update();
         });
   </script>
   </head>
