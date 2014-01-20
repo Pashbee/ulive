@@ -1,16 +1,18 @@
-$(function($) {
-            
-    function cpu_update() {
+
+(function($) {
+    // Ulive CPU Function - Checks CPU data from dummy url        
+    
+var usageMethods = {
+    cpu: function() {
    
             $.getJSON("../_stuff",
                 function(data) {
                     $("#cpuload").text(data.cpu+" %")
-                    $("#ram").text(data.ram+" %")
-                    $("#disk").text(data.disk+" %")
+                    
                 });
         }
-    setInterval(cpu_update, 2000);
-    cpu_update();
+    };
+    setInterval(usageMethods.cpu, 2000);
+    usageMethods.cpu()
   
-});
-
+})(jQuery);
