@@ -11,7 +11,7 @@ body {
   
 header {
  /* background-color: #2B2B2B; */
-  background-color: #0099FC;
+  background-color: #2B2B2B;
   height: 35px;
   width: 100%;
   opacity: .9;
@@ -55,7 +55,7 @@ h2 {
   margin-top: 40px;
   text-align: center;
   letter-spacing: -2px;
-  color: #0099FC;
+  color: #2B2B2B;
 }
  
 h3 {
@@ -64,11 +64,11 @@ h3 {
   margin-top: 30px;
   text-align: center;
   letter-spacing: -1px;
-  color: #0099FC;
+  color: #2B2B2B;
 }
 
 body p {
-  color: #0099FC;
+  color: #2B2B2B;
   font-size: 0.8em;
 }
 
@@ -128,7 +128,7 @@ div.headicons {
   margin-left: 25%;
   width: 50%;
   height: 25%;
-  background-color: rgba(0, 153, 252, 0.1);
+  background-color: rgba(43, 43, 43, 0.1);
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -139,7 +139,7 @@ div.headicons {
  }
 
  p.textfoot {
-  color: #0099FC;
+  color: #2B2B2B;
   opacity: 100.0;
   font-size: 8pt;
 

@@ -18,7 +18,8 @@ def projects():
 @app.route('/_stuff', methods= ['GET'])
 def stuff():
     cpu=psutil.cpu_percent()
-    return jsonify(cpu=cpu)
+    ram=psutil.virtual_memory()
+    return jsonify(cpu=cpu,ram=ram.percent)
  
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)

@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mark Pashby - Website</title>    
+    <title>Ulive - Live system information with makeup </title>    
     <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
-<script type="text/javascript">
-$(function() {
-            
-    function cpu_update() {
-    var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-            $.getJSON($SCRIPT_ROOT+"/_stuff",
-                function(data) {
-                    $("#cpuload").text(data.cpu+" %")
-                    $("#ram").text(data.ram+" %")
-                    $("#disk").text(data.disk+" %")
-                });
-        }
-        setInterval(cpu_update, 10000);
-        cpu_update();
-        });
-  </script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/ulive.js') }}"></script>  
+    
   </head>
   <body>
     <header>
-      <div class="headicons">
-      <img class="fb" src="static/img/freshfb.png">
-      <img class="mail" src="static/img/freshmail.png">
-      <img class="twitter" src="static/img/freshtwitter.png">
-      <img class="youtube" src="static/img/freshutube.png">
-    </div>
       <div class="container">
-        <h1 class="logo">Mark Pashby</h1>
+        <h1 class="logo">Ulive</h1>
         <strong><nav>
       <ul class="menu">
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
-        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('projects') }}">Download</a></li>
       </ul>
     </nav></strong>
     </div>
@@ -46,9 +26,10 @@ $(function() {
     </div>
     <footer>
       <div class="footbox">
-        <p class="textfoot">&#64; 2010-2014 markpashby.com - Pure Digital Empathy</p>
+        <p class="textfoot">&#64; 2010-2014 ulive.org - Live system information with makeup</p>
       </div>
     <div><span id="cpuload"></span></div>
     </footer>
+    
   </body>
 </html>
