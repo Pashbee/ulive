@@ -7,11 +7,15 @@ var usageMethods = {
    
             $.getJSON("../_stuff",
                 function(data) {
-                    $("#cpuload").text(data.cpu+" %")
-                    
+                    var cpuPercent = data.cpu+"%"
+                    $("#cpuload").text(cpuPercent);
+                    $("#barwidth").css('width', cpuPercent);    
                 });
+
         }
     };
+
+
     setInterval(usageMethods.cpu, 2000);
     usageMethods.cpu()
   
